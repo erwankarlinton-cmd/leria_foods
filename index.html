@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>𝓛é𝓻𝓲𝓪𝓯𝓸𝓸𝓭 🍽️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a1c4fd);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      color: #333;
+      padding: 0;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .emoji {
+      position: fixed;
+      font-size: 24px;
+animation: float 5s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-20px);}
+      100% {transform: translateY(0);}
+    }
+
+    .admin-section, .site-content {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    textarea, input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    button {
+      background: #ff6600;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #login {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #gallery img {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Emojis flottants -->
+  <div class="emoji" style="top: 20px; left: 10px;">🍴</div>
+  <div class="emoji" style="bottom: 20px; right: 10px;">🥄</div>
+  <div class="emoji" style="top: 50%; right: 10px;">🍳</div>
+  <div class="emoji" style="bottom: 30%; left: 20px;">🍽️</div>
+
+  <header>𝓛é𝓻𝓲𝓪𝓯𝓸𝓸𝓭 🍽️ </header>
+
+  <!-- Login -->
+  <div id="login">
+    <h3>Connexion administrateur</h3>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>𝓛é𝓻𝓲𝓪𝓯𝓸𝓸𝓭 🍽️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      color: #333;
+      padding: 0;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+    }
+ .emoji {
+      position: fixed;
+      font-size: 24px;
+      animation: float 5s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-20px);}
+      100% {transform: translateY(0);}
+    }
+
+    .admin-section, .site-content {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    textarea, input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    button {
+      background: #ff6600;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #login {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #gallery img {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Emojis flottants -->
+  <div class="emoji" style="top: 20px; left: 10px;">🍴</div>
+  <div class="emoji" style="bottom: 20px; right: 10px;">🥄</div>
+  <div class="emoji" style="top: 50%; right: 10px;">🍳</div>
+  <div class="emoji" style="bottom: 30%; left: 20px;">🍽️</div>
+
+  <header>𝓛é𝓻𝓲𝓪𝓯𝓸𝓸𝓭 🍽️</header>
+
+  <!-- Connexion Admin -->
+  <div id="login"> <h3>Connexion administrateur</h3>
+    <input type="password" id="code" placeholder="Entrer le code" />
+    <button onclick="login()">Valider</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <!-- Panneau Admin -->
+  <div class="admin-section" id="adminPanel" style="display:none;">
+    <h2>Configuration du site visiteur</h2>
+
+    <h4>Modifier la description du restaurant</h4>
+    <textarea id="descInput"></textarea>
+    <button onclick="updateDescription()">Enregistrer la description</button>
+
+    <h4>Changer le menu du jour</h4>
+    <textarea id="menuInput"></textarea>
+    <button onclick="updateMenu()">Enregistrer le menu</button>
+
+    <h4>Ajouter une image (lien URL)</h4>
+    <input type="text" id="imgURL" placeholder="https://..." />
+    <button onclick="addImage()">Ajouter une image</button>
+
+    <h4>Supprimer toutes les images</h4>
+    <button onclick="clearGallery()">Vider la galerie</button>
+  </div>
+
+  <!-- Section Publique -->
+  <div class="site-content">
+    <h3>Description :</h3>
+    <p id="desc">Bienvenue sur Lériafood 🍽️, le goût des anges à chaque bouchée.</p>
+
+    <h3>Menu du jour :</h3>
+    <p id="menu">🍛 Riz sauté aux crevettes <br> 🍗 Poulet DG <br> 🍰 Tiramisu maison</p>
+
+    <h3>Galerie :</h3>
+    <div id="gallery"></div>
+  </div>
+ <footer>© 2025 Lériafood | Tous droits réservés</footer>
+
+  <script>
+    function login() {
+      const code = document.getElementById('code').value;
+      if (code === '2709') {
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('adminPanel').style.display = 'block';
+      } else {
+        document.getElementById('error').innerText = 'Code incorrect !';
+      }
+    }
+
+    function updateDescription() {
+      const desc = document.getElementById('descInput').value;
+      document.getElementById('desc').innerText = desc;
+    }
+
+    function updateMenu() {
+      const menu = document.getElementById('menuInput').value;
+      document.getElementById('menu').innerHTML = menu.replace(/\n/g, '<br>');
+    }
+
+    function addImage() {
+      const url = document.getElementById('imgURL').value;
+      const img = document.createElement('img');
+      img.src = url;
+      document.getElementById('gallery').appendChild(img);
+    }
+
+    function clearGallery() {
+      document.getElementById('gallery').innerHTML = '';
+    }
+  </script>
+</body>
+</html>
